@@ -6,3 +6,4 @@ RUN apt-get dist-upgrade
 RUN apt-get -y install software-properties-common
 RUN apt-add-repository --yes --update ppa:ansible/ansible-${ANSIBLE_VERSION}
 RUN apt-get -y install ansible
+RUN apt-get -y python-dnspython
